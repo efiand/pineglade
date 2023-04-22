@@ -21,7 +21,7 @@
 	<meta property="og:url" content={url} />
 </svelte:head>
 
-<div class="page">
+<div class="page container">
 	<Header />
 
 	<main>

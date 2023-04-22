@@ -7,9 +7,15 @@
 </script>
 
 <header>
-	<a href="/" aria-current={isIndex ? 'page' : null}> На главную </a>
-	<nav />
+	<h1>
+		<a href={isIndex ? null : '/'} aria-current={isIndex ? 'page' : null}>
+			Веб-студия «Сосновая Поляна»
+		</a>
+	</h1>
 </header>
 
 <style lang="scss">
+	header {
+		text-align: center;
+	}
 </style>

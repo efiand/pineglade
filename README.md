@@ -1,3 +1,3 @@
-# pineglade-template
+# pineglade
 
-Шаблон для создания проектов веб-студии [«Сосновая Поляна»](https://pineglade.ru).
+Сайт веб-студии [«Сосновая Поляна»](https://pineglade.ru).

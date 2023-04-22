@@ -2,3 +2,18 @@
 	position: fixed;
 	transform: scale(0);
 }
+
+.container {
+	padding-right: 16px;
+	padding-left: 16px;
+
+	@include tablet-desktop {
+		padding-right: 32px;
+		padding-left: 32px;
+	}
+
+	@include desktop {
+		padding-right: calc(50% - 568px);
+		padding-left: calc(50% - 568px);
+	}
+}
