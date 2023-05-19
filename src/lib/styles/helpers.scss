@@ -17,3 +17,30 @@
 		padding-left: calc(50% - 568px);
 	}
 }
+
+.grid {
+	display: grid;
+	gap: 30px 45px;
+
+	@include tablet-desktop {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.center {
+	text-align: center;
+}
+
+.bulletable {
+	li {
+		position: relative;
+		padding-left: 30px;
+
+		&::before {
+			content: '—';
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}

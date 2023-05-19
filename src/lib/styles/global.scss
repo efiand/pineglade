@@ -2,11 +2,11 @@ html {
 	min-width: 320px;
 	overflow-y: scroll; // чтобы содержимое не скакало влево-вправо при быстрой смене страниц
 	font-size: 16px;
-	line-height: 1.2;
-	font-family: sans-serif;
+	line-height: 1.5;
+	font-family: $font-roboto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	color: #333333;
+	color: $color-text;
 	-webkit-tap-highlight-color: transparent;
 	text-rendering: optimizeLegibility;
 	scroll-behavior: smooth;
@@ -52,6 +52,13 @@ a {
 	&:not([href]) {
 		pointer-events: none;
 	}
+}
+
+em {
+	font-weight: 400;
+	font-style: italic;
+	font-family: $font-playfair;
+	letter-spacing: 0;
 }
 
 img,

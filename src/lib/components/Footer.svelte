@@ -1,8 +1,11 @@
-<footer>© pineglade 2017</footer>
+<footer class="container">© pineglade 2017</footer>
 
 <style lang="scss">
 	footer {
-		padding: 1rem 0;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
 		text-align: center;
+		color: $color-white;
+		background-color: $color-bg;
 	}
 </style>

@@ -1,3 +1,14 @@
+$color-bg: #292929;
+$color-bg-light: #f2f2f2;
+$color-brown: #a98b69;
+$color-green: #2b5025;
+$color-text: #747474;
+$color-title: #2e2e2e;
+$color-white: #ffffff;
+$font-montserrat: 'Montserrat', sans-serif;
+$font-playfair: 'Playfair Display', serif;
+$font-roboto: 'Roboto', sans-serif;
+
 @mixin mobile {
 	@media (max-width: 767px) {
 		@content;

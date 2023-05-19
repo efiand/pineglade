@@ -1,0 +1,25 @@
+@font-face {
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'Roboto';
+	font-display: swap;
+	src: url('/fonts/roboto-400.woff2') format('woff2');
+}
+
+@font-face {
+	font-weight: 700;
+	font-style: normal;
+	font-family: 'Montserrat';
+	font-display: swap;
+	src: url('/fonts/montserrat-700.woff2') format('woff2');
+}
+
+@each $style in normal, italic {
+	@font-face {
+		font-weight: 400;
+		font-style: $style;
+		font-family: 'Playfair Display';
+		font-display: swap;
+		src: url('/fonts/playfair-display-400-#{$style}.woff2') format('woff2');
+	}
+}

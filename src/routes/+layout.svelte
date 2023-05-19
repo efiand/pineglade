@@ -5,9 +5,11 @@
 	import Header from '$lib/components/Header.svelte';
 	import { page } from '$app/stores';
 
+	let isIndex: boolean;
 	let title: string;
 	let url: string;
 
+	$: isIndex = $page.url.pathname === '/';
 	$: title = `${PROJECT}: ${$page.data.title}`;
 	$: url = `${DOMAIN}${$page.url.pathname}`;
 </script>
@@ -21,20 +23,12 @@
 	<meta property="og:url" content={url} />
 </svelte:head>
 
-<div class="page container">
-	<Header />
+<Header {isIndex} />
 
-	<main>
-		<slot />
-	</main>
+<main>
+	<slot />
+</main>
 
+{#if isIndex}
 	<Footer />
-</div>
-
-<style lang="scss">
-	.page {
-		display: grid;
-		grid-template-rows: min-content 1fr min-content;
-		min-height: 100vh;
-	}
-</style>
+{/if}
