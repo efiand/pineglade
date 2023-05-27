@@ -42,9 +42,25 @@
 		text-align: center;
 		color: $color-white;
 		background-color: $color-bg;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			height: 100%;
+			min-height: 100vh; // For mobile floating address bar
+			background-image: url('/img/background.webp');
+			background-position: 0 50%;
+			background-size: cover;
+			opacity: 0.075;
+			filter: grayscale(1);
+		}
 	}
 
 	h1 {
+		position: relative;
 		margin: auto;
 		font-weight: 400;
 		font-size: 60px;
@@ -57,6 +73,10 @@
 		flex-direction: column;
 		gap: 40px;
 		align-items: center;
+	}
+
+	p {
+		position: relative;
 	}
 
 	em {

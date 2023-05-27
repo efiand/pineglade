@@ -53,11 +53,11 @@
 			<b>Поддерживаемые</b>
 			<dl class="grid">
 				<div>
-					<dt><a href="https://netbiblio.ru">Netbiblio</a></dt>
+					<dt><a href="https://netbiblio.ru/">Netbiblio</a></dt>
 					<dd>Cайт бесплатного интернет-издательства.</dd>
 				</div>
 				<div>
-					<dt><a href="https://cooknote.efiand.ru/">Личный кулинарный блог</a></dt>
+					<dt><a href="https://cooknote.pineglade.ru/">Личный кулинарный блог</a></dt>
 					<dd>Любезно открытый заказчиком для чтения сборник проверенных рецептов.</dd>
 				</div>
 				<div>
