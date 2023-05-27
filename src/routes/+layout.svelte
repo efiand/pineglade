@@ -16,7 +16,6 @@
 
 <svelte:head>
 	<title>{title}</title>
-	<meta name="description" content="Страница «{$page.data.title}» сайта «${PROJECT}»." />
 	<link rel="canonical" href={url} />
 	<meta property="og:site_name" content={PROJECT} />
 	<meta property="og:title" content={title} />
